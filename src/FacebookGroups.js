@@ -4,7 +4,7 @@ const FacebookGroups = () => {
   return (
     <div>
       <h1>Facebook Rental Groups - SF Bay Area</h1>
-      <ol>
+      <ul style={{listStyleType: 'none'}}>
         <li><a href="https://www.facebook.com/groups/786797438080489/"><p>San Francisco Ca✔ For Rent Rooms, Appartments, Houses</p></a></li>
         <li><a href="https://www.facebook.com/groups/1511607562483357/">San Francisco Bay Area - Roommates, Rooms, Apartments, Rentals, Sublets</a></li>
         <li><a href="https://www.facebook.com/groups/945920215452910/">Affordable Housing For Ok People: Bay Area</a></li>
@@ -19,7 +19,7 @@ const FacebookGroups = () => {
         <li><a href=""></a></li>
         <li><a href=""></a></li>
         <li><a href=""></a></li>
-      </ol>
+      </ul>
     </div>
   )
 }
