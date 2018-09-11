@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FacebookGroups from './FacebookGroups';
+import PodcastList from './PodcastList';
 
 class LambdaDemo extends Component {
   constructor(props) {
@@ -39,6 +41,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <LambdaDemo/>
+        <FacebookGroups />
       </div>
     );
   }
