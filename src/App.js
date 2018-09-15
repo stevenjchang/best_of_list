@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Route } from 'react-router-dom';
+
 import logo from './logo.svg';
 import './App.css';
 import FacebookGroups from './FacebookGroups';
@@ -40,7 +42,7 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <LambdaDemo/>
+        <Route path="/lambda" component={LambdaDemo} />
         <FacebookGroups />
       </div>
     );
