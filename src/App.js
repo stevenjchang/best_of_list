@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
-import FacebookGroups from './FacebookGroups';
+import FacebookGroupsList from './Components/FacebookGroupsList';
 import PodcastList from './PodcastList';
 
 class LambdaDemo extends Component {
@@ -43,7 +43,7 @@ class App extends Component {
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
         <Route path="/lambda" component={LambdaDemo} />
-        <FacebookGroups />
+        <Route path="/facebook/rentalgroups/sf" component={FacebookGroupsList} />
       </div>
     );
   }

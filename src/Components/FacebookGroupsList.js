@@ -1,11 +1,22 @@
 import React, { Component } from 'react';
 
-const FacebookGroups = () => {
+import FacebookGroupsDetail from './FacebookGroupsDetail';
+import facebookgroups from './../data/facebookgroups';
+
+
+const FacebookGroupsList = () => {
   return (
     <div>
-      <h1>Facebook Rental Groups - SF Bay Area</h1>
+      <h1>List of Facebook Rental Groups - SF Bay Area</h1>
       <ul style={{listStyleType: 'none'}}>
-        <li><a href="https://www.facebook.com/groups/786797438080489/"><p>San Francisco Ca✔ For Rent Rooms, Appartments, Houses</p></a></li>
+
+        { 
+          facebookgroups.map((item) => {
+            return <FacebookGroupsDetail {...item} />
+          })
+        }
+
+        {/* <li><a href="https://www.facebook.com/groups/786797438080489/"><p>San Francisco Ca✔ For Rent Rooms, Appartments, Houses</p></a></li>
         <li><a href="https://www.facebook.com/groups/1511607562483357/">San Francisco Bay Area - Roommates, Rooms, Apartments, Rentals, Sublets</a></li>
         <li><a href="https://www.facebook.com/groups/945920215452910/">Affordable Housing For Ok People: Bay Area</a></li>
         <li><a href="https://www.facebook.com/groups/317688158367767/">Friends looking for SF housing! -Anjou</a></li>
@@ -15,13 +26,10 @@ const FacebookGroups = () => {
         <li><a href="https://www.facebook.com/groups/843764532374203/">San Francisco Housing, Rooms, Apartments, Sublets</a></li>
         <li><a href="https://www.facebook.com/groups/sfhousing/">San Francisco, SF - Housing, Apartments, Rooms, Sublets, Roommates</a></li>
         <li><a href="https://www.facebook.com/groups/1041652969189404/">Bay Area Rooms, Apartments and House Rentals</a></li>
-        <li><a href="https://www.facebook.com/groups/findyournextopportunity/">Albert's Job Listings & Referrals - San Francisco Bay Area</a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href="https://www.facebook.com/groups/findyournextopportunity/">Albert's Job Listings & Referrals - San Francisco Bay Area</a></li> */}
       </ul>
     </div>
   )
 }
 
-export default FacebookGroups;
+export default FacebookGroupsList;
