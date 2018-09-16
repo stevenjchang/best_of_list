@@ -1,0 +1,60 @@
+.grouplist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 750px;                 /* Set width of cards */
+  border: 1px solid gray;    /* Set up Border */
+  border-radius: 4px;           /* Slightly Curve edges */
+  overflow: hidden;             /* Fixes the corners */
+  display: flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+  margin-bottom: 30px;
+}
+
+.card-header {
+  color: #FFEBEE;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid gray;
+  background-color: rgba(12, 65, 240, 0.7);
+  padding: 5px 10px;
+}
+
+.card-main {
+  display: flex;              /* Children use Flexbox */
+  flex-direction: row;     /* Rotate Axis to Vertical */
+  justify-content: flex-start;    /* Group Children in Center */
+  align-items: center;        /* Group Children in Center (+axis) */
+  padding: 0 0;            /* Add padding to the top/bottom */
+}
+
+.image-container {
+  position: relative;
+}
+.number {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 100%;
+  font-size: 40px;
+  color: #FFEBEE;
+}
+
+.image {
+  font-size: 59px;
+  width: 120px;
+  height: 120px;
+  color: #D32F2F;
+  /* margin-bottom: 5px; */
+}
+
+.main-description {
+  color: gray;
+  font-size: 20px;
+  text-align: left;
+  padding-left: 5%;
+}
