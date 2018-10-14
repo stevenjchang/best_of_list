@@ -5,6 +5,7 @@ import logo from './logo.svg';
 import './App.css';
 import FacebookGroupsList from './Components/FacebookGroupsList';
 import PodcastList from './PodcastList';
+import ReduxForm from './Components/ReduxForm';
 
 class LambdaDemo extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ class App extends Component {
         </p>
         <Route path="/lambda" component={LambdaDemo} />
         <Route path="/facebook/rentalgroups/sf" component={FacebookGroupsList} />
+        <Route path="/reduxform" component={ReduxForm} />
       </div>
     );
   }
