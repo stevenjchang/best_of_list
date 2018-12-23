@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 import logo from './logo.svg';
 import './App.css';
@@ -43,7 +43,11 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-        <ReduxForm />
+        <p>
+          <Link to="/facebook/rentalgroups/sf">facebook</Link>
+          <br />
+          <Link to="/lambda">lambda</Link>
+        </p>
         <Route path="/lambda" component={LambdaDemo} />
         <Route path="/facebook/rentalgroups/sf" component={FacebookGroupsList} />
         <Route path="/reduxform" component={ReduxForm} />
