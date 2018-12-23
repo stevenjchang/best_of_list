@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './FacebookGroupsDetail.css';
+import './FacebookGroupsDetailGrid.css';
 
 const FacebookGroupsDetail = (props) => {
   return (
@@ -16,9 +16,9 @@ const FacebookGroupsDetail = (props) => {
           <span className="number">{props.index + 1}</span>
         </div>
         <div className="main-description">
-          {/* <a href={props.url} target="_blank"> */}
+          <a href={props.url} target="_blank">
             {props.name}
-          {/* </a> */}
+          </a>
         </div>
       </div>
 
